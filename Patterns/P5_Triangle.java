@@ -1,6 +1,15 @@
 package Patterns;
 
-public class P3 {
+/*
+Pattern(P)5: Triangle
+
+      * 
+    * * * 
+  * * * * * 
+
+*/
+
+public class P5_Triangle {
     public static void main(String[] args) {
         for (int i = 1; i <= 3; i++) {
             // inner loop for Decreasing triangle of spaces

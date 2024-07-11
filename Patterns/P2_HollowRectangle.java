@@ -9,7 +9,7 @@ Pattern(P)2: Hollow Rectangle
  *****   r=3,c=0 | r=3,c=1 | r=3,c=2 | r=3,c=3 | r=3,c=4
  
  */
-public class P2 {
+public class P2_HollowRectangle {
     public static void main(String[] args) {
         int r = 4;
         int c = 5;
