@@ -1,0 +1,7 @@
+Q1) WJP to implement class named as student with the following fields:-
+	a) RollNo,name,class of student and percentage.
+Consider a method to display all the details of the student.
+
+Q2) WAP to print area of a rectangle by creating a class named as area which has two methods 
+1st method name is exactDimension which takes in length and breadth of the rectangle as parameter.
+2nd method name is displayArea which returns the area of the rectangle.
