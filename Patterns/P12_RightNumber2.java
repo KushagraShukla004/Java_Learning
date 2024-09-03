@@ -3,6 +3,7 @@ package Patterns;
 import java.util.Scanner;
 
 /*
+Level-2
  1
  22
  333

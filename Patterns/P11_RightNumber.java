@@ -1,6 +1,7 @@
 package Patterns;
 
 /*
+Level-1
  1
  12
  123
