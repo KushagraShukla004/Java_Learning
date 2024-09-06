@@ -5,15 +5,25 @@ import java.util.*;
 public class HCFandLCM {
 
     static int HCF(int n1, int n2) {
-        int num1 = n1;
-        int num2 = n2;
+        // BRUTE FORCE
+        // int num1 = n1;
+        // int num2 = n2;
 
-        while (num2 != 0) {
-            int temp = num2;
-            num2 = num1 % num2;
-            num1 = temp;
+        // while (num2 != 0) {
+        // int temp = num2;
+        // num2 = num1 % num2;
+        // num1 = temp;
+        // }
+        // return num1;
+
+        // Better Approach since we know the HCF is always smaller than the smallest of
+        // the two numbers
+        for (int i = Math.min(n1, n2); i > 0; i--) {
+            if (n1 % i == 0 && n2 % i == 0) {
+                return i;
+            }
         }
-        return num1;
+        return 1;
     }
 
     static int LCM(int n1, int n2, int hcf) {
