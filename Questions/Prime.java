@@ -9,12 +9,17 @@ public class Prime {
         int N = scan.nextInt();
         scan.close();
         int count = 0;
-        for (int i = 1; i <= N; i++) {
+        for (int i = 1; i * i <= N; i++) {
             if (N % i == 0) {
                 count += 1;
+                if (N / i != i) {
+                    count += 1;
+                }
+                if (count > 2) {
+                    break;
+                }
             }
         }
-        System.out.println("Number of Factors: " + count);
         if (count == 2) {
             System.out.println(N + " is a Prime Number.");
         } else {
