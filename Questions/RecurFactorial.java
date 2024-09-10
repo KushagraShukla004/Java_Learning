@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 public class RecurFactorial {
     static int fact(int N) {
-        int ans = 1;
-        for (int i = 1; i <= N; i++) {
-            ans = ans * i;
+        if (N == 0) {
+            return 1;
         }
-        return ans;
+        return N * fact(N - 1);
     }
 
     public static void main(String[] args) {
