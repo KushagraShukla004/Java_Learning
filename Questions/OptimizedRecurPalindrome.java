@@ -8,6 +8,8 @@ public class OptimizedRecurPalindrome {
     static boolean isPalindrome(String N, int start, int end) {
         // Base case: if the start index is greater than or equal to the end index, it's
         // a palindrome
+        // The base case is true when either there is one or no characters left to
+        // compare
         if (start >= end) {
             return true;
         }
