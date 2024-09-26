@@ -27,6 +27,20 @@ class Student {
         System.out.println("Roll_num: " + roll_num);
         System.out.println("Name: " + name);
     }
+
+    // Method Overriding
+    public void Hello() {
+        System.out.println("Welcome Student");
+    }
+}
+
+// Inheritance (Single Inheritance):it will access class Student and will call
+// default constructor
+class FullStackStud extends Student {
+    // Method Overriding
+    public void Hello() {
+        System.out.println("Welcome FullStack Student");
+    }
 }
 
 class DemoMain {
@@ -37,5 +51,16 @@ class DemoMain {
         s1.display();
         s2.display();
         s3.display();
+        FullStackStud f1 = new FullStackStud();
+        f1.display();
+        // Method Overriding
+        f1.Hello();// Welcome FullStack Student
+        s1.Hello();// Welcome Student
+        // runtime polymorphism, late polymorphism
+        // because the decision to take FullStackStud's Hello() is taken on JAVA runtime
+        // Since, in compile-time JAVA looks for Student's Hello() but in runtime it
+        // changes to FullStackSud
+        Student s4 = new FullStackStud();
+        s4.Hello();// Welcome FullStack Student
     }
 }
