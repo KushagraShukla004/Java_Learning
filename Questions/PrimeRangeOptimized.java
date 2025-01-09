@@ -18,6 +18,12 @@ public class PrimeRangeOptimized {
         for (int p = 2; p * p <= n; p++) {
             if (isPrime[p]) {
                 // Mark all multiples of p as non-prime
+
+                // i=p*p because we want multiples of p
+                // example: p=2, then multiple of 2 are p*2 (i.e. p only), so
+                // i=p*p = 2*2 = 4 ;
+                // then for next multiple we can just add p to the i
+                // therefore, i += p (i = i+p)
                 for (int i = p * p; i <= n; i += p) {
                     isPrime[i] = false;
                 }
