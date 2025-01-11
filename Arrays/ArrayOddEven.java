@@ -14,12 +14,12 @@ public class ArrayOddEven {
 
         // First loop to iterate through arr to find odd,even
         for (int i = 0; i < size; i++) {
-            if (arr[i] % 2 == 0) { // odd
-                temp[k--] = arr[i];
+            if (arr[i] % 2 != 0) { // odd
+                temp[j++] = arr[i];
             }
             // even
             else {
-                temp[j++] = arr[i];
+                temp[k--] = arr[i];
             }
         }
         return temp;
