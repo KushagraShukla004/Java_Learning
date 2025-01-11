@@ -1,4 +1,4 @@
-package Arrays.TwoD;
+package BasicStuff;
 
 import java.util.Scanner;
 
