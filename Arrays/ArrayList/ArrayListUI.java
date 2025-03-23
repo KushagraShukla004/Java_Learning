@@ -36,7 +36,7 @@ public class ArrayListUI {
             } else if (choice == 3) {
                 System.out.println("Array: " + arr);
             } else if (choice == 4) {
-                System.out.println("Exitted.");
+                System.out.println("Exited.");
                 break;
             }
         }
